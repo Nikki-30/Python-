@@ -1,0 +1,14 @@
+{% extends 'adminhome.html' %}
+
+
+{% block 'b1' %}
+<h2 align="center"><font color="black">Insert Packages</font></h2>
+<div>
+    {% for i in messages %}
+    <h4 align="center"><font color="red"> {{i}}</font></h4>
+     {%endfor %}
+</div>
+<from method="post" action="{% url 'checkpackages' %}">
+
+</from>
+{% endblock %}
