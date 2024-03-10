@@ -1,0 +1,38 @@
+{% extends 'index.html' %}
+{% block 'b1' %}
+<h2 align="center"><font color="black">Feed Back</font></h2>
+<form method="post" action="{% url 'checkfeedback' %}">
+    {% csrf_token %}
+    <table align="center" >
+<html>
+<head>
+    <title>Feedback Form</title>
+</head>
+<body>
+
+<h2 align="center">Feedback Form</h2>
+
+<form action="/submit-your-feedback" method="post">
+    <tr>
+       <td> <label for="name">Name:</label><br></td>
+    <td><input type="text" id="name" name="name" required><br></td>
+    </tr>
+
+<tr>
+   <td><label for="email">Email:</label><br></td>
+    <td><input type="email" id="email" name="email" required><br></td>
+
+</tr>
+<tr>
+    <td><label for="message">Feedback:</label><br></td>
+    <td><textarea id="message" name="message" rows="4" required></textarea><br></td>
+</tr>
+
+
+    <td align="center"><input type="submit" value="Submit"></td>
+    <td align="center"><input type="reset" value="clear"></td>
+</form>
+
+</body>
+</html>
+{% endblock %}

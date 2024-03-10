@@ -3,7 +3,9 @@
 <h1 align="center"><font color="black">LOGIN PAGE</font></h1>
 <form method="post" action="{% url 'checkadminlogin' %} ">
     {% csrf_token %}
+
 <table align="center" >
+
     <tr>
         <td><label> Enter UserName :</label></td>
         <td><input type="text" name="uname" required/></td>

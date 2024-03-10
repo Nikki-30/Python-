@@ -1,0 +1,45 @@
+{% extends 'index.html' %}
+{% block 'b1' %}
+<h2 align="center"><font color="black">Vehicle Deletion page</font></h2>
+<form method="post" action="{% url 'checkdeletevehicle' %}">
+    {% csrf_token %}
+    <table align="center" border="2">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h2 align="center">Vehicle Information</h2>
+</head>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <table align="center" >
+    <form action="/insert-information" method="post">
+<tr>
+    <td><label for="name">Number of the Vehicle :</label></td>
+    <td><input type="text" id="name" name="name" required></td>
+</tr>
+         <td align="center"><input type="submit" value="Delete"></td>
+         <td align="center"><input type="reset" value="clear"></td>
+
+</form>
+
+
+</body>
+</html>
+
+
+{% endblock %}

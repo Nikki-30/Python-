@@ -1,0 +1,66 @@
+{% extends 'index.html' %}
+{% block 'b1' %}
+<h2 align="center"><font color="black">Vehicle Details page</font></h2>
+<form method="post" action="{% url 'checkinsertvehicle' %}">
+    {% csrf_token %}
+    <table align="center" border="2">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Information</title>
+</head>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Information Table</title>
+    <style>
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1 align ="center">Vehicle Details</h1>
+    <table align="center" >
+    <form action="/insert-information" method="post">
+<tr>
+    <td><label for="name">Number of the Vehicle :</label><br></td>
+    <td><input type="text"  name="name" required>
+</tr>
+
+<tr>
+     <td ><label for="name">Name of the Vehicle:</label><br></td>
+    <td><input type="text"  id="name" name="cname" required><br></td>
+</tr>
+
+<tr>
+   <td><label for="name">Year of Manufacture:</label><br></td>
+    <td><input type="text"  name="yname" required><br></td>
+</tr>
+<tr>
+     <td><label for="name">Problem of your vehicle:</label><br></td>
+    <td><input type="text"  name="pname" required><br></td>
+</tr>
+<tr>
+     <td><label for="name">How often do you go to service station:</label><br></td>
+    <td><input type="text"  name="hname" required><br></td>
+</tr>
+
+
+   <td align="center"><input type="submit" value="Insert"></td>
+    <td align="center"><input type="reset" value="clear"></td>
+
+</form>
+    </table>
+</body>
+
+</html>
+
+
+
+{% endblock %}

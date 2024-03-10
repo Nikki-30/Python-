@@ -1,4 +1,75 @@
 {% extends 'index.html' %}
 {% block 'b1' %}
-<h2 align="center"> <font color="black">ABOUT PAGE</font></h2>
+<h2 align="center"><font color="black"> About Us </font></h2>
+
+
+<html>
+<head>
+    <title>About Us</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+
+        .team-member {
+            margin: 20px 0;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .team-member:last-child {
+            border-bottom: none;
+        }
+        .team-member img {
+            border-radius: 50%;
+            float: left;
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+        }
+        .team-member h3 {
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>About Us</h1><br>
+    <p>Welcome to Service Center, where we specialize in Servicing your Vehicles.Our mission is to give the product according to your requirements.</p>
+
+
+    <h2>Meet the Team</h2>
+    <div class="Keerthi,Amrutha,Nikitha">
+
+        <h3>Team Member Name:Keerthi</h3>
+
+    </div>
+    <div class="team-member">
+
+        <h3>Team Member Name:Amrutha</h3>
+
+    </div>
+     <div class="team-member">
+
+        <h3>Team Member Leader:Nikitha</h3>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
 {% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'index.html' %}
+{% block 'b1' %}
+<h2 align="center"><font color="black">Delete page</font></h2>
+<form method="post" action="{% url 'checkdelete' %}">
+    {% csrf_token %}
+<html>
+<head>
+    <title>Delete Record</title>
+</head>
+<body>
+<h2 align="center"></h2>
+<form action="/delete-information" method="post">
+    <table align="center" >
+        <tr>
+            <td>
+                <label for="id">Name:</label>
+            </td>
+            <td>
+                <input type="text" id="id" name="id" required><br>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" value="Delete">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
+{% endblock %}

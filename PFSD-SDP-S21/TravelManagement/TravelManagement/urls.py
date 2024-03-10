@@ -26,6 +26,14 @@ urlpatterns = [
     path("about", views.aboutpage, name="about"),
     path("contact", views.contactpage, name="contact"),
     path("Register", views.registrationPage, name="register"),
+    path("insert", views.insertPage,name="insert"),
+    path("update",views.updatepage,name="update"),
+    path("delete",views.deletepage,name="delete"),
+    path("navbar",views.navbarpage,name="navbar"),
+    path("insertvehicle", views.insertvehiclepage, name="insertvehicle"),
+    path("updatevehicle", views.updatevehiclepage, name="updatevehicle"),
+    path("deletevehicle", views.deletevehiclepage, name="deletevehicle"),
+    path("feedback",views.feedbackpage,name="feedback"),
     path("", include("admineapp.urls")),
 
 ]

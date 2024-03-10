@@ -1,0 +1,38 @@
+{% extends 'index.html' %}
+{% block 'b1' %}
+<h2 align="center"><font color="black">Update Vehicle Information</font></h2>
+<form method="post" action="{% url 'checkupdatevehicle' %}">
+    {% csrf_token %}
+    <table align="center" border="2">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <h3 align="center">To Update the Vehicle Details</h3>
+     <table align="center" >
+    <form action="/insert-information" method="post">
+<tr>
+    <td><label for="name">Number of the Vehicle :</label><br></td>
+    <td><input type="text"  name="name" required><br></td>
+</tr>
+<tr>
+     <td ><label for="name">Name of the Vehicle:</label><br></td>
+    <td><input type="text"  id="name" name="cname" required><br></td>
+</tr>
+
+      <td align="center"><input type="submit" value="Update"></td>
+    <td align="center"><input type="reset" value="clear"></td>
+    </form>
+
+</body>
+</html>
+{% endblock %}

@@ -2,19 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Travel Tourism Management</title>
+    <title>Automobile Management System</title>
     <link type="text/css" rel="stylesheet" href="{% static 'css/style.css'  %}" />
 </head>
 <body >
-<body  style="background-image: url('{% static 'images/home.jpg' %}');background-repeat:no-repeat;background-size:100%;";>
+<body  style="background-image: url('{% static 'images/automobile.png' %}');background-repeat:no-repeat;background-size:100%;";>
 <a href="{% url 'register' %}"> Sign-up </a>&nbsp&nbsp&nbsp
 <a href="{% url 'login' %}"> Login </a>&nbsp&nbsp&nbsp
 <a href="{% url 'changepassword' %}"> Change Password </a>&nbsp&nbsp&nbsp
 <a href="{% url 'about' %}"> About </a>&nbsp&nbsp&nbsp
 <a href="{% url 'contact' %}">Contact </a>&nbsp&nbsp&nbsp
+<a href="{% url 'insert' %}">Insert</a>&nbsp&nbsp&nbsp
+<a href="{% url 'update' %}">Update</a>&nbsp&nbsp&nbsp
+<a href="{% url 'delete' %}">Delete </a>&nbsp&nbsp&nbsp
+<a href="{% url 'updatevehicle' %}">Updatevehicle </a>&nbsp&nbsp&nbsp
+<a href="{% url 'deletevehicle' %}">Deletevehicle </a>&nbsp&nbsp&nbsp
+<a href="{% url 'insertvehicle' %}">Insertvehicle</a>&nbsp&nbsp&nbsp
 <a href="{% url 'logout' %}"> Logout </a>
 {% block 'b1' %}
-<h1 align="center"> <font color="black">KLU Travel Tourism And Management</font></h1>
+<h1 align="center"> <font color="black">Automobile Management System</font></h1>
 <div>
     {% for i in messages %}
     <h4 align="center"><font color="black">{{i}}</font></h4>
